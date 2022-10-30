@@ -1,0 +1,878 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: myRiad Pro;
+    src: url(../fonts/Myriad\ Pro\ Regular.ttf);
+}
+.mywidth{
+    width: 1175px;
+    margin: auto;
+}
+
+/* header section css */
+header{
+    width: 100%;
+    /* padding: 210px 0; */
+    height: 100vh;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 115px;
+}
+
+nav img{
+    width: 160px;
+}
+
+.nav_links{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color: #87d37c;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+.banner_content{
+    /* width: 90%; */
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.banner_content h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.banner_content h3:last-of-type{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 200;
+    margin-top: 15px;
+}
+.banner_content h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    border: 1px solid #fff;
+    padding: 40px;
+}
+
+
+/* About section css */
+
+.about_us{
+    padding: 115px 0;
+    text-align: center;
+}
+
+.about_us h4{
+    font-family: myRiad Pro;
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 40px;
+}
+
+.about_us p{
+    font-family: myRiad Pro; 
+    font-size: 18px;
+    padding-bottom: 70px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_col{
+    flex-basis: 23%;
+}
+
+.about_col img{
+    padding-bottom: 35px;
+    /* background-color: transparent; */
+}
+
+.pad_bottom{
+    margin-bottom: 20px;
+}
+
+.about_col h4{
+    font-family: myRiad Pro; 
+    font-size: 24px;
+    color: #030303;
+    padding-bottom: 20px;
+}
+
+.about_col p{
+    font-family: myRiad Pro; 
+    font-size: 14px;
+    color: #040404; 
+    text-align: justify;
+}
+
+.about_col:hover img {
+    filter: invert(89%) sepia(3%) saturate(6379%) hue-rotate(58deg) brightness(86%) contrast(93%);
+}
+.about_col:hover h4 {
+    color: #87d37c;
+}
+
+
+/* service section css */
+.service{
+    background-color: #e1e1e1;
+}
+
+.service_content{
+    padding: 95px 0;
+    text-align: center;
+}
+
+.service_content h4{
+    font-family: myRiad Pro; 
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 40px;
+}
+
+.service_content  p{
+    font-family: myRiad Pro; 
+    font-size: 18px;
+    padding-bottom: 70px;
+}
+
+.service_col{
+    flex-basis: 23%;
+    position: relative;
+}
+
+.service_col img{
+    width: 100%;
+    display: block;
+}
+.service_col i{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%,-50%);
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.service_col .fa-google-plus-g{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+
+.service_col .fa-link:hover{
+    background-color: #87d37c;
+}
+
+.service_col .fa-google-plus-g:hover{
+    background-color: #87d37c;
+}
+
+
+/* portfolio section css */
+
+.portfolio{
+    padding: 165px 0;
+    text-align: center;
+}
+
+.our_portfolio h4{
+    font-family: myRiad Pro;
+    font-weight: 900;
+    font-size: 36px;
+    color: #010101;
+    padding-bottom: 35px;
+}
+
+.our_portfolio p{
+    font-family: myRiad Pro; 
+    color: #262627;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.portfolio_element{
+    padding-bottom: 60px;
+}
+.portfolio_element ul li{
+    display: inline;
+    background-color: #010101;
+    margin-right: 15px;
+    padding: 15px 23px;
+}
+
+.portfolio_element ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.portfolio_element ul li:hover{
+    background-color: #87d37c;
+    transition: .5s ease;
+}
+
+.portfolio_images_col{
+    flex-basis: 23%;
+    position: relative;
+}
+.portfolio_images_col img{
+    display: block;
+    /* width: 100%; */
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay h5{
+    color: #87d37c;
+    font-family: myRiad Pro; 
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* opacity: 0; */
+}
+
+/* pricing section css */
+
+.our_pricing{
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.our_pricing h4{
+    font-family: myRiad Pro;
+    font-weight: 900;
+    font-size: 36px;
+    color: #010101;
+    padding-bottom: 35px;
+}
+
+.our_pricing p{
+    font-family: myRiad Pro; 
+    color: #262627;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.pricing_col{
+    flex-basis: 22%;
+    background-color: #39393a;
+    padding: 20px 0;
+    transition: .5s ease;
+}
+
+.our_col{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border: 4px solid #f7f6fa;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 62px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.our_col h4{
+    font-size: 29px;
+    font-weight: bold;
+    color: #fefdfc;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+}
+
+.our_col h4::first-letter{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fefdfc;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 12px;
+}
+
+.our_col h4 span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fefdfc;
+    font-family: 'Oswald', sans-serif;
+}
+
+.our_col h5{
+    font-size: 19px;
+    font-weight: bold;
+    color: #fefdfc;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 12px;
+}
+
+.pricing_col p{
+    font-size: 14px;
+    color: #fffefe;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 28px;
+}
+
+.pricing_col p:after{
+    content: "";
+    width: 127px;
+    height: 2px;
+    background-color: #fffefe;
+    position: absolute;
+    bottom: 21px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pricing_col a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #39393a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #fefdfc;
+    padding: 12px 20px;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.pricing_col:hover{
+    background-color: #87d37c;
+    cursor: pointer;
+}
+
+.pricing_col:hover .our_col{
+    background-color: #fff;
+    
+} 
+.pricing_col:hover .our_col h4{
+    color: #87d37c;
+}
+.pricing_col:hover span{
+    color: #87d37c;
+}
+
+.pricing_col:hover h4::first-letter{
+    color: #87d37c;
+}
+
+.pricing_col:hover .our_col h5{
+    color: #87d37c;
+}
+
+.pricing_col:hover a{
+    color: #87d37c;
+}
+
+
+/* projects section css */
+.projects{
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/projects.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 105px 0;
+}
+
+.projects_col{
+    color: #fff;
+    flex-basis: 23%;
+    padding: 10px 25px 10px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.projects_col h4{
+    font-size: 55px;
+    font-weight: bold;
+    color: #f7efef;
+    font-family: 'Oswald', sans-serif;
+}
+
+.projects_col p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #f7efef;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* contact section css */
+
+.contact_us{
+    padding-top: 140px;
+    text-align: center;
+}
+
+.contact_us h4{
+    font-family: myRiad Pro;
+    font-weight: 900;
+    font-size: 36px;
+    color: #010101;
+    padding-bottom: 35px;
+}
+
+.contact_us p{
+    font-family: myRiad Pro; 
+    color: #262627;
+    font-size: 18px;
+    padding-bottom: 90px;
+}
+
+.contact_col{
+    flex-basis: 22%;
+    cursor: pointer;
+}
+
+.contact_col i{
+    color: black;
+    font-size: 55px;
+    margin-bottom: 35px;
+    transition: 0.5s ease;
+}
+
+.contact_col h5{
+    color: #2a2a2a;
+    font-family: myRiad Pro;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    transition: 0.5s ease;
+}
+
+.contact_col p{
+    color: #2a2a2a;
+    font-family: myRiad Pro;
+    font-size: 14px;
+}
+
+.contact_col:hover i,h5{
+   color: #87d37c;
+}
+
+.contact_col:hover h5{
+    color: #87d37c;
+}
+
+/* form section css */
+.form{
+    background-color: #f5f5f5;
+}
+
+.form_col{
+    flex-basis: 50%;
+    padding: 125px 0 20px 0;
+    position: relative;
+}
+
+.form_col input{
+    display: block;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.form_col input:placeholder-shown {
+    font-style: italic;
+    padding-left: 15px;
+    color: #565656;
+    font-family: myRiad Pro;
+    font-size: 18px;
+}
+
+.form_col textarea{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 27px;
+    resize: none;
+    position: absolute;
+    top: 32px;
+}
+
+.form_col textarea:placeholder-shown{
+    padding-left: 18px;
+    padding-top: 40px;
+    font-style: italic;
+    color: #565656;
+    font-family: myRiad Pro;
+    font-size: 18px;
+}
+
+.form_col button{
+    background-color: #87d37c;
+    color: #fff;
+    font-family: myRiad Pro;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: -52px;
+}
+
+/* google map section css */
+.goolge_map img{
+    width: 100%;
+}
+
+/* footer section css */
+footer{
+    background-color: #000101;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer .name{
+    display: inline-block;
+}
+
+footer .name p{
+    color: #fff;
+    font-family: myRiad Pro;
+    font-size: 14px;
+}
+
+footer .footer_icon{
+    /* display: inline-block; */
+    float: right;
+}
+
+footer .footer_icon i{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer .footer_icon i:hover{
+    color: #87d37c;
+}
+
+
+
+/* CSS media Query */
+@media(max-width:1400px){
+    .banner_content h3{
+        font-size: 20px;
+    }
+    .banner_content h1{
+        font-size: 40px;
+        padding: 10px;
+    }
+    .banner_content h3:last-of-type{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1200px){
+    .mywidth{
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media(max-width:1142px){
+    nav{
+        padding: 15px 60px;
+    }
+    nav img{
+        width: 120px;
+    }
+    nav ul li{
+        margin-left: 5px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .mywidth{
+        width: 95%;
+        margin: auto;
+    }
+    .portfolio_images_col img{
+        width: 95%;
+    }
+    .portfolio_images_col{
+        flex-basis: 33%;
+    }
+}
+
+@media(max-width:1142px){
+    nav ul li{
+        margin-left: 10px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .form_col{
+        flex-basis: 45%;
+    }
+}
+
+@media(max-width:991px){
+    nav img{
+        width: 110px;
+    }
+    nav ul li{
+        margin-left: 5px;
+    }
+    nav ul li a{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:834px){
+    nav{
+        padding: 15px 40px;
+    }
+    nav img{
+        width: 100px;
+    }
+    nav ul li{
+        margin-left: 8px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    .portfolio_element ul li{
+        margin-right: 13px;
+        padding: 10px 18px;
+    }
+    .projects_col{
+        padding: 5px 15px 5px 15px;
+    }
+    .projects_col h4{
+        font-size: 35px;
+    }
+    .projects_col p{
+        font-size: 15px;
+    }
+    .form_col{
+        flex-basis: 48%;
+    }
+    .form_col input{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    .portfolio_element ul li {
+        margin-right: 2px;
+        padding: 7px 17px;
+    }
+}
+
+/* responsive for header */
+@media(max-width:720px){
+    .row{
+        flex-direction: column;
+    }
+    nav img{
+        width: 90px;
+    }
+    nav{
+        padding: 15px 50px;
+    }
+    .nav_links{
+        background-color: #87d37c;
+        height: 100vh;
+        position:absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        text-align: left;
+        z-index: 2;
+        padding: 15px;
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav ul li{
+        display: block;
+        padding: 15px;
+    }
+    nav ul li a:hover{
+        color: black;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        margin: 15px;
+        text-align: right;
+        font-size: 25px;
+    }
+    nav .fa-solid:hover{
+        color: black;
+    }
+    
+
+    .banner_content h1{
+        font-size: 24px;
+        padding: 20px;
+    } 
+    .banner_content h3, .banner_content h3:last-of-type{
+        font-size: 20px;
+    }
+    .about_col{
+        width: 50%;
+    }
+    .service_col{
+        margin-bottom: 20px;
+    }
+    .portfolio_element ul li{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .portfolio_images_col{
+        margin-bottom: 10px;
+    }
+    .pricing_col{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .projects_col{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .contact_col i{  
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .contact_us p{
+        padding-bottom: 40px;
+    }
+    .form_col{
+        width: 80%;
+        padding: 30px 0 20px 0;
+        margin-bottom: 15px;
+    }
+    .form_col input{
+        width: 100%;
+    }
+    .form_col textarea{
+        top: -40px;
+    }
+    .form_col button{
+        bottom: -66px;
+    }
+    .goolge_map img{
+        margin-top: 70px;
+    }
+}
+
+@media(max-width:523px){
+    footer .name p{
+        font-size: 13px;
+    }
+
+    footer .footer_icon i{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:480px){
+    footer .name p{
+        font-size: 12px;
+    }
+
+    footer .footer_icon i{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:454px){
+    footer .name{
+        display: block;
+        text-align: center;
+    }
+    footer .name p{
+        font-size: 10px;
+        padding-bottom: 10px;
+
+    }
+    footer .footer_icon{
+        float: none;
+    }
+
+    footer .footer_icon i{
+        font-size: 10px;
+    }
+}
